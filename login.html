@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-family: "poppins",sans-serif;
+            box-sizing: border-box;
+        }
+        .container{
+            width:100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)),url("stack-cryptocurrencies_752237-9901.jpg");
+            background-position:center ;
+            background-size: cover;
+            position: relative;
+        }
+        
+        .form-box{
+            width: 90%;
+            max-width: 450px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: #fff;
+            padding: 50px 60px 70px;
+            text-align: center;
+            border-radius: 30px;
+        }
+        .form-box h1{
+            font-size: 30px;
+            margin-bottom: 60px;
+            color:violet;
+            position: relative;
+        }
+        .form-box h1::after{
+            content: '';
+            width: 30px;
+            height: 4px;
+            border-radius: 3px;
+            background-color: violet;
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+         .input-ufield, .input-pfield{
+            background: #eaeaea;
+            margin: 15px 0;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+        }
+        input{
+            width: 100%;
+        background: transparent;
+        border: 0;
+        outline: 0;
+        padding:18px 15px;
+
+        }
+       
+        .input-pfield span{
+            margin-left: 15px;
+            color: #999;
+        }
+        .input-ufield span{
+            margin-left: 15px;
+            color: #999;
+        }
+        form p {
+            text-align: left;
+            font-size: 13px;
+        }
+        form p a{
+            text-decoration: none;
+            color: #3c00a0;
+        }
+
+        .btn-field{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn-field button{
+            flex-basis: 48%;
+            background:#3c00a0;
+            color: #fff;
+            height: 40px;
+            border-radius: 20px;
+            border:0;
+            outline:0;
+            cursor: pointer;
+            transition: background 1s;
+            margin-left:100px ;
+        }
+        .input-grouping{
+           height: 170px;
+        }
+        .logo{
+            font-size: 2.5em;
+            color: gold;
+        }
+        @media (min-width:320px) and (max-width:767px){
+            .btn-field button{
+            flex-basis: 48%;
+            background:#3c00a0;
+            color: #fff;
+            height: 40px;
+            border-radius: 20px;
+            border:0;
+            outline:0;
+            cursor: pointer;
+            transition: background 1s;
+            margin-left:80px ;
+        }
+        }
+        
+    </style>
+</head>
+<body>  
+    
+    <div class="container">
+        
+        <div class="form-box">
+            <div class="logo">
+                KnowCoin
+            </div> 
+            <h1>Sign In</h1>
+            <form>
+                <div class="input-grouping">
+                    <div class="input-ufield">
+                        <span class="material-symbols-outlined b">
+                            person
+                            </span>
+
+                        <input type="text" class="username" placeholder="Enter Userame">
+                    </div>
+                    
+                    <div class="input-pfield">
+                        <span class="material-symbols-outlined b">
+                            lock
+                            </span>
+                            <input type="password" class="password" placeholder="Enter Password">
+                    </div>
+                    
+                </div>
+                <div class="btn-field">
+                    <button type="button"  onclick="funOne()">Sign In</button>
+                   
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="login.js">
+
+    </script>
+</body>
+</html>

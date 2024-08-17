@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            font-family: sans-serif;
+            background-image:  linear-gradient(rgba(212, 213, 208, 0.8),rgba(226, 228, 223, 0.8)),url("stack-cryptocurrencies_752237-9901.jpg");
+
+        }
+        .a{
+            display: flex;
+            justify-content: space-between;
+        }
+        #b{
+             font-size: 50px;
+             font-weight: 500;
+             font-family: sans-serif;
+             padding: 5px
+        }
+        .c{
+            font-size: 25px;
+            font-weight: 200;
+            font-family: sans-serif;
+            padding:10px;
+            margin-top: 5px;
+        }
+        .d{
+            display: flex;
+        }
+        .e{
+            height: 30px;
+            background-color: transparent;
+            outline: 0;
+           
+            border-radius: 0px;
+            font-size: 20px;
+            color: #333;
+            width:300px;
+            border-radius: 50px;
+        }
+        .f{
+            margin-top: 10px;
+        }
+        :placeholder-shown{
+            font-size: small;
+        }
+     
+       .ahr{
+        height: max-content;
+        width:98vw;
+        border:2px solid red;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box9;
+        flex-direction: row;
+       }
+       .named{
+        height: max-content;
+        width: 60%;
+       
+       }
+       .details{
+        /* border:2px solid green; */
+        width: 39%;
+        height: 700px;
+        border-radius: 5px;
+       box-shadow:2px 2px 2px 2px rgb(157, 157, 190) ;
+         background-color: rgb(164, 156, 156);
+       }
+       .im1{
+        margin-top: 20px;
+        margin-left: 10px;
+        
+       }
+       .heading{
+        display: flex;
+        gap:10px;
+       }
+       h2{
+        font-size: 25px ;
+        margin-left: 5px;
+        color: brown;
+       }
+
+       p{
+        font-size: 20px;
+        margin-left: 6px;
+       }
+       .h{
+        font-size: 50px;
+       }
+       .button1{
+        margin-left: 10px;
+       }
+      
+       .inpu{
+        width: 60%;
+        height: 50px;
+        font-size: larger;
+        border:2px solid black;
+       }
+       .sub{
+        height: 55px;
+        width: 100px;
+        padding: 3px;
+        font-size: 20px;
+
+       }
+       .cur{
+        width:100px;
+        height: 55px;
+        font-size: 20px;
+       }
+       option{
+        font-size: 20px;
+       }
+       .de{
+        display: flex;
+        justify-content: center;
+       }
+       table{
+        width: 100%;
+        font-size: 30px;
+        
+       }
+       tr{
+        height: 140%;
+       }
+       td{
+        width: 50%;
+      padding:5px;
+        border-bottom: 2px solid gray;
+       }
+       .tar{
+        text-align: right;
+       }
+       .result-box{
+        /* display: none; */
+        cursor: pointer;
+        z-index: 99;
+        position: absolute;
+        max-height: 200px;
+      overflow-y:scroll ;
+      width: 305px;
+      box-shadow: 2px 2px gray ;
+       }
+       .result-box ul{
+        border:1px solid black;
+        background-color: white;
+          margin: 0;
+          z-index: 99;
+          padding-inline-start: 0;
+        
+          border-radius: 5px;
+         
+        }
+        .result-box ul li{
+            display: block;
+            margin: 3px;
+            padding: 0;
+            content: none;
+            background-color: transparent;
+            list-style: none;
+            border-radius: 3px;
+         z-index: 99;
+        
+        
+        }
+        .result-box ul li:hover{
+            background-color: aqua;
+        }
+
+       @media (max-width:480px) {
+        .ahr{
+            height: 2200px;
+            width:1100px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .named{
+            border:2px solid red;
+display: block;
+height: max-content;
+width:100%;
+font-size: 30px;
+        }
+        h2{
+            font-size: 60px;
+            margin-left: 20px;
+        }
+        p{
+            font-size: 50px;
+            margin-left: 20px;
+        }
+        h1{
+            font-size: 80px;
+        }
+        .details{
+            width: 100%;
+            height: fit-content;
+        }
+       }
+       @media (min-width:480px) and (max-width:768px) {
+        .ahr{
+            height: 2200px;
+            width:1100px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .named{
+            border:2px solid red;
+display: block;
+height: max-content;
+width:100%;
+font-size: 30px;
+        }
+        h2{
+            font-size: 60px;
+            margin-left: 20px;
+        }
+        p{
+            font-size: 50px;
+            margin-left: 20px;
+        }
+        h1{
+            font-size: 80px;
+        }
+        .details{
+            width: 100%;
+            height: fit-content;
+        }
+       }
+
+       @media (min-width:767px) and (max-width:1024px) {
+        table{
+            font-size:20px;
+        }
+        .details{
+            height: fit-content;
+        }
+       }
+       @media (min-width:1024px) and (max-width:1263px){
+        table{
+            font-size: 27px;
+            height: fit-content;
+        }
+       }
+
+       @media (min-width:1263px) and (max-width:1400px){
+        table{
+            font-size: 27px;
+        }
+       }
+       a{
+        text-decoration: none;
+       }
+       
+    </style>
+</head>
+<body>
+    <header class="a">
+        
+        <div id="b">
+            <a href="home.html">KnowCoin</a>
+        </div>
+       <div class="d">
+        <!-- <div class="f">
+            <input type="text" class="e" placeholder="search symbol or name">
+            <div class="result-box">
+
+            </div>
+        </div> -->
+        <div class="c">
+            <a href="one.html">Coins</a> 
+        </div>
+       </div> 
+    </header>
+    <hr>
+
+
+    <div  class="ahr">
+         
+        <div class="named"></div>
+        <div class="details">
+            <div class="de">
+                <h1 style="font-size: 40px;"><u>Details</u></h1>
+            </div>
+            <div class="tab">
+
+            </div>
+
+           
+     
+        </div>
+
+
+    </div>
+
+
+
+   <script src="outlet.js">
+    
+   </script>
+</body>
+</html>
